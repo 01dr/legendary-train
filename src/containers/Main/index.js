@@ -3,9 +3,9 @@ import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
 
-import { incrementCounter, decrementCounter } from './redux/ducks/counter';
+import { incrementCounter, decrementCounter } from '../../redux/ducks/counter';
 
-class App extends Component {
+class Main extends Component {
   render() {
     const {
       counter,
@@ -41,4 +41,4 @@ export default connect(
     incrementCounter,
     decrementCounter
   }
-)(App);
+)(Main);
